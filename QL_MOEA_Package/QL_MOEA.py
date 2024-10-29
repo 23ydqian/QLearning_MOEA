@@ -204,7 +204,7 @@ class AMOEA_MAP_framework:
 
             else:
                 next_state = 2
-                update_q_table(state,action,0,next_state,Q_table)
+                update_q_table(state,action,-10,next_state,Q_table)
                 state = 2
                 action = choose_mu_action(state,Q_table)
 
