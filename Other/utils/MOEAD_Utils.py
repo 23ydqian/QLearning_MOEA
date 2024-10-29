@@ -1,12 +1,12 @@
 import os
 from math import sqrt
-from src.HLS.DSpoint import DSpoint
-import src.HLS.ADRSunit as ADRSunit
-import src.HLS.datasets as datasets
-import src.HLS.datasets_DB4HLS as datasets2
+from Other.HLS.DSpoint import DSpoint
+import Other.HLS.ADRSunit as ADRSunit
+import Other.HLS.datasets as datasets
+import Other.HLS.datasets_DB4HLS as datasets2
 
 import numpy as np
-from src.utils.Mean_Vector_Util import Mean_vector
+from Other.utils.Mean_Vector_Util import Mean_vector
 
 '''
 MOEAD工具包

@@ -1,10 +1,10 @@
 import random
 
-import src.utils.MOEAD_Utils as MOEAD_Utils
-import src.utils.Draw_Utils as Draw_Utils
-import src.utils.EDA_operator as EDA
-from src.HLS.DSpoint import DSpoint
-import src.HLS.ADRSunit as ADRSunit
+import Other.utils.MOEAD_Utils as MOEAD_Utils
+import Other.utils.Draw_Utils as Draw_Utils
+import Other.utils.EDA_operator as EDA
+from Other.HLS.DSpoint import DSpoint
+import Other.HLS.ADRSunit as ADRSunit
 import numpy as np
 import pandas as pd
 import copy

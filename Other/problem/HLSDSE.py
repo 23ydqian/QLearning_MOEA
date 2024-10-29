@@ -1,7 +1,7 @@
 import datasets
-from src.HLS.sythesis import FakeSynthesis
-from src.HLS.DSpoint import DSpoint
-import src.HLS.ADRSunit as ADRSunit
+from Other.HLS.sythesis import FakeSynthesis
+from Other.HLS.DSpoint import DSpoint
+import Other.HLS.ADRSunit as ADRSunit
 import numpy as np
 
 # 具体看benchmark
