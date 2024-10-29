@@ -17,15 +17,15 @@ dirname, filename = os.path.split(os.path.abspath(__file__))
 package_path = dirname+'\\QL_MOEA_Package'
 sys.path.append(package_path)
 
-from AMOEA_MAP import Chromosome
-from AMOEA_MAP import AMOEA_MAP_framework
+from QL_MOEA import Chromosome
+from QL_MOEA import AMOEA_MAP_framework
 from MOO_functions_ import *
 
 start_time = time.time()  # 记录开始时间
 ### G E N E R A L    S E T T I N G S ###########################################
 arg = {
         "Population size" : 70,
-        "Genenration Max" : 200,
+        "Genenration Max" : 300,
     }
 
 

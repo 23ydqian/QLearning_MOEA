@@ -197,15 +197,15 @@ class AMOEA_MAP_framework:
 
 
             if adrs < current_adrs:
-                next_state = 0
+                next_state = 1
                 update_q_table(state,action,10,next_state,Q_table)
-                state = 0
+                state = 1
                 action = choose_mu_action(state,Q_table)
 
             else:
-                next_state = 1
+                next_state = 2
                 update_q_table(state,action,0,next_state,Q_table)
-                state = 1
+                state = 2
                 action = choose_mu_action(state,Q_table)
 
 
