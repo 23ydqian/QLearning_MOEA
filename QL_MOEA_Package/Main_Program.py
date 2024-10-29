@@ -14,7 +14,7 @@ from itertools import zip_longest
 import time
 
 dirname, filename = os.path.split(os.path.abspath(__file__))
-package_path = dirname+'\\AMOEA_MAP_Package'
+package_path = dirname+'\\QL_MOEA_Package'
 sys.path.append(package_path)
 
 from AMOEA_MAP import Chromosome
