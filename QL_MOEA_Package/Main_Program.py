@@ -53,7 +53,7 @@ for i in range(0, len(synthesis_result)):
 adrs_run_history = []
 adrs_time_history = []
 
-with open(f'C:/Users/19519/Desktop/samples/{benchmark}_samples_{arg["Population size"]}.json', 'r') as file:
+with open(f'samples/{benchmark}_samples_{arg["Population size"]}.json', 'r') as file:
     init_samples = json.load(file)
 
 for i in range(0, 10):
