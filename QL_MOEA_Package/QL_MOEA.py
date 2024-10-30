@@ -48,6 +48,7 @@ class AMOEA_MAP_framework:
         pareto_frontier = []
         temp_adrs = 99999999
         Q_table = np.zeros((3, 3))
+        Q_table[:] = 1
 
         num_of_iterations = 1
 
@@ -204,7 +205,7 @@ class AMOEA_MAP_framework:
 
             else:
                 next_state = 2
-                update_q_table(state,action,-10,next_state,Q_table)
+                update_q_table(state,action,0,next_state,Q_table)
                 state = 2
                 action = choose_mu_action(state,Q_table)
 
