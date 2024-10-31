@@ -146,7 +146,7 @@ class AMOEA_MAP_framework:
                     for s in selected_parents_var:
                         list1.append(s)
                     list2 = find_column_modes_with_counts(list1)
-                    list2 = find_indices_excluding_two_max(list2)
+                    list2 = find_indices_excluding_one_max(list2)
                     position = random.choice(list2)
                     child = mutation(cr, 0.8, feature_sets, position)
                     child_mu = Chromosome(arg, child)
@@ -156,7 +156,7 @@ class AMOEA_MAP_framework:
                     for s in selected_parents_var:
                         list1.append(s)
                     list2 = find_column_modes_with_counts(list1)
-                    list2 = find_indices_excluding_one_max(list2)
+                    list2 = find_indices_excluding_two_max(list2)
                     position = random.choice(list2)
                     child = mutation(cr, 0.8, feature_sets, position)
                     child_mu = Chromosome(arg, child)
