@@ -24,12 +24,12 @@ from MOO_functions_ import *
 start_time = time.time()  # 记录开始时间
 ### G E N E R A L    S E T T I N G S ###########################################
 arg = {
-        "Population size" : 200,
+        "Population size" : 70,
         "Genenration Max" : 300,
     }
 
 
-benchmark = "get_delta_matrix_weights2"
+benchmark = "get_oracle_activations1_backprop_backprop"
 filename1 = "backprop"
 
     # Extract data from the database
