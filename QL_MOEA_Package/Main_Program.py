@@ -24,12 +24,12 @@ from MOO_functions_ import *
 start_time = time.time()  # 记录开始时间
 ### G E N E R A L    S E T T I N G S ###########################################
 arg = {
-        "Population size" : 70,
+        "Population size" : 200,
         "Genenration Max" : 300,
     }
 
 
-benchmark = "get_oracle_activations1_backprop_backprop"
+benchmark = "get_delta_matrix_weights2"
 filename1 = "backprop"
 
     # Extract data from the database
@@ -56,7 +56,7 @@ adrs_time_history = []
 with open(f'samples/{benchmark}_samples_{arg["Population size"]}.json', 'r') as file:
     init_samples = json.load(file)
 
-for i in range(0, 10):
+for i in range(0, 1):
     Benchmark = MOO()
     Benchmark.Bench_descret_matrix = {}
     P = []

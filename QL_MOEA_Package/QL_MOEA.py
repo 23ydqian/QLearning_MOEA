@@ -95,7 +95,6 @@ class AMOEA_MAP_framework:
 
         for i in range(self.Gen_Max):
             current_adrs = adrs
-
             print("迭代次数第" + str(num_of_iterations) + "次")
             num_of_iterations += 1
             # 选择
@@ -133,7 +132,6 @@ class AMOEA_MAP_framework:
                     adrs_evolution.append(adrs)
                     time_evolution.append(all_time)
 
-
             # 变异
             for cr in selected_parents_var:
                 if(action == 0):
@@ -161,8 +159,6 @@ class AMOEA_MAP_framework:
                     child = mutation(cr, 0.8, feature_sets, position)
                     child_mu = Chromosome(arg, child)
 
-
-
                 child_mu.evaluation(Benchmark, entire_ds)
                 if child_mu.evaluated:
                     number_of_synthesis += 1
@@ -186,16 +182,12 @@ class AMOEA_MAP_framework:
                     time_evolution.append(all_time)
 
 
-
-
-
             del P[:]
             P1 = []
             for p in pareto_frontier:
                 c = Chromosome(arg, p.configuration)
                 P1.append(c)
             P = P1
-
 
             if adrs < current_adrs:
                 next_state = 1
@@ -209,14 +201,7 @@ class AMOEA_MAP_framework:
                 state = 2
                 action = choose_mu_action(state,Q_table)
 
-
-
-
         return adrs_evolution, time_evolution
-
-
-
-
 
 
 def choose_mu_action(state,Q_table):
@@ -228,9 +213,7 @@ def update_q_table(state,action,reward,next_state,Q_table):
     best_next_action = np.argmax(Q_table[next_state])
     new_qValues = (1 - alpha) * Q_table[(state, action)] + alpha * (
                 reward + gamma * Q_table[(next_state, best_next_action)])
-    # if reward == 0:
-    #     Q_table[(state, action)] -= 100
-    # else:
+
     Q_table[(state, action)] = new_qValues
 
 
